@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#ffffff" />
-  <title>슬기로운 택배생활</title>
+
+  <title>슬기로운 택배생활 개인정보처리방침</title>
 
   <style>
     * {
@@ -26,7 +27,7 @@
         sans-serif;
       background: #f6f7f9;
       color: #1f2328;
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     .page {
@@ -35,11 +36,17 @@
       padding: 48px 0 72px;
     }
 
-    .hero {
+    .hero,
+    .card {
       background: #ffffff;
-      border-radius: 24px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero {
       padding: 42px 36px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      border-radius: 24px;
       margin-bottom: 24px;
     }
 
@@ -52,20 +59,20 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(32px, 7vw, 48px);
-      line-height: 1.2;
+      font-size: clamp(30px, 7vw, 46px);
+      line-height: 1.25;
       letter-spacing: -0.04em;
     }
 
     .subtitle {
       margin: 18px 0 0;
       color: #59616c;
-      font-size: 17px;
+      font-size: 16px;
     }
 
-    .version {
+    .updated {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 18px;
       padding: 6px 12px;
       border-radius: 999px;
       background: #f0f2f4;
@@ -75,79 +82,87 @@
     }
 
     .card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 30px;
       margin-top: 20px;
-      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
       margin: 0 0 14px;
-      font-size: 24px;
-      line-height: 1.35;
+      font-size: 23px;
+      line-height: 1.4;
       letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 18px;
     }
 
     p {
       margin: 0;
     }
 
-    .pro-description {
-      white-space: pre-line;
-      color: #454c56;
-      font-size: 16px;
-    }
-
-    .price-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 22px;
-    }
-
-    .price-card {
-      border: 1px solid #e3e6ea;
-      border-radius: 16px;
-      padding: 22px;
-      background: #fafbfc;
-    }
-
-    .price-label {
-      color: #6b7280;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .price {
-      margin-top: 6px;
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-    }
-
-    .price-note {
-      margin-top: 4px;
-      color: #7b838d;
-      font-size: 13px;
-    }
-
-    .notice {
-      margin-top: 18px;
-      padding: 16px 18px;
-      border-radius: 14px;
-      background: #f5f6f8;
-      color: #606873;
-      font-size: 14px;
+    p + p {
+      margin-top: 12px;
     }
 
     ul {
-      margin: 14px 0 0;
+      margin: 12px 0 0;
       padding-left: 22px;
     }
 
     li + li {
       margin-top: 7px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 12px 14px;
+      border: 1px solid #e2e5e9;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f5f6f8;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: #f5f6f8;
+      color: #565e68;
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: #f5f6f8;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -169,10 +184,6 @@
         padding: 24px 20px;
       }
 
-      .price-grid {
-        grid-template-columns: 1fr;
-      }
-
       h2 {
         font-size: 21px;
       }
@@ -184,88 +195,376 @@
   <main class="page">
 
     <section class="hero">
-      <p class="eyebrow">택배기사 업무 기록 · 정산 · 통계 관리</p>
+      <p class="eyebrow">슬기로운 택배생활</p>
 
-      <h1>슬기로운 택배생활</h1>
+      <h1>개인정보처리방침</h1>
 
       <p class="subtitle">
-        업무 기록부터 정산, 스케줄, 통계까지 한곳에서 관리할 수 있는
-        택배기사 업무 관리 앱입니다.
+        슬기로운 택배생활은 사용자의 개인정보와 이용 데이터를 중요하게 생각하며,
+        관련 법령과 Google Play 정책에 따라 필요한 범위에서 데이터를 처리하고
+        안전하게 보호하기 위해 노력합니다.
       </p>
 
-      <span class="version">v3.5.10</span>
+      <span class="updated">시행일 및 최종 업데이트: 2026년 9월 11일</span>
     </section>
 
     <section class="card">
-      <h2>슬택생 PRO</h2>
-
-      <p class="pro-description">최초 설치 후 30일간 무료 체험기간을 제공합니다. 체험기간 종료 후 구글 광고가 표시되고, 일부 기능 사용의 제약이 있을 수 있습니다. 체험기간 종료 후 슬택생 PRO 서비스를 구독하시면 광고없이 모든 기능을 이용하실 수 있습니다.
-
-슬택생 PRO 서비스가 유용하셨다면 "한달 1,100원" 부담없는 가격으로 광고없이 모든 기능을 계속 이용해보세요!</p>
-
-      <div class="price-grid">
-
-        <div class="price-card">
-          <div class="price-label">월간 구독</div>
-          <div class="price">1,100원</div>
-          <div class="price-note">매월 자동 갱신</div>
-        </div>
-
-        <div class="price-card">
-          <div class="price-label">연간 구독</div>
-          <div class="price">11,000원</div>
-          <div class="price-note">매년 자동 갱신</div>
-        </div>
-
-      </div>
-
-      <div class="notice">
-        실제 결제 금액과 결제 조건은 Google Play 결제 화면에 표시되는 내용을 기준으로 합니다.
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>주요 기능</h2>
-
-      <ul>
-        <li>택배 업무 기록 및 업무 이력 관리</li>
-        <li>라우트별 단가 및 정산 관리</li>
-        <li>홈 화면 업무 현황 확인</li>
-        <li>달력 및 스케줄 관리</li>
-        <li>월별 · 연도별 · 전체 기간 통계 분석</li>
-        <li>홈 화면 위젯 지원</li>
-        <li>슬택생 PRO 구독 및 광고 제거</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>무료 체험 및 PRO 이용</h2>
+      <h2>1. 개인정보처리방침의 적용 범위</h2>
 
       <p>
-        최초 설치 후 제공되는 무료 체험기간 동안에는 슬택생 PRO 기능을 이용할 수 있습니다.
-        체험기간 종료 후에는 광고가 표시될 수 있으며 일부 기능의 사용이 제한될 수 있습니다.
+        본 개인정보처리방침은 Android 애플리케이션
+        <strong>슬기로운 택배생활</strong>
+        (패키지명: <strong>com.spapa.seultaeksaeng</strong>)에 적용됩니다.
       </p>
 
-      <p style="margin-top: 14px;">
-        Google Play 월간 또는 연간 정기구독이 활성화되어 있는 경우
-        광고 없이 PRO 기능을 계속 이용할 수 있습니다.
+      <p>
+        앱의 일부 기능은 사용자가 직접 활성화하거나 참여하는 경우에만
+        관련 데이터가 처리됩니다.
       </p>
     </section>
 
     <section class="card">
-      <h2>결제 안내</h2>
+      <h2>2. 수집 또는 처리하는 데이터</h2>
+
+      <p>
+        슬기로운 택배생활은 앱 기능 제공, 서비스 운영, 광고 제공 및 보안 등을 위해
+        아래와 같은 데이터를 처리할 수 있습니다.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>데이터 유형</th>
+              <th>예시</th>
+              <th>주요 이용 목적</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>이름</td>
+              <td>사용자가 직접 설정한 랭킹 닉네임</td>
+              <td>랭킹 참여 및 사용자 표시</td>
+            </tr>
+
+            <tr>
+              <td>사용자 ID</td>
+              <td>Firebase 익명 사용자 식별자 등 서비스 식별 정보</td>
+              <td>
+                사용자 구분, 온라인 기능 제공,
+                랭킹·문의·서비스 운영
+              </td>
+            </tr>
+
+            <tr>
+              <td>피트니스 정보</td>
+              <td>걸음수 등 신체 활동 정보</td>
+              <td>만보기 및 걸음수 랭킹 기능 제공</td>
+            </tr>
+
+            <tr>
+              <td>앱 상호작용</td>
+              <td>앱 또는 광고와의 상호작용 정보</td>
+              <td>
+                광고 제공, 광고 성과 측정,
+                분석 및 부정 사용 방지
+              </td>
+            </tr>
+
+            <tr>
+              <td>기타 사용자 제작 콘텐츠</td>
+              <td>
+                개발자 문의 제목 및 내용,
+                랭킹 신고 내용,
+                사용자가 직접 입력한 서비스 관련 콘텐츠
+              </td>
+              <td>
+                앱 기능 제공, 문의 응대,
+                신고 처리 및 서비스 운영
+              </td>
+            </tr>
+
+            <tr>
+              <td>진단 정보</td>
+              <td>SDK 및 앱 동작과 관련된 기술적 진단 정보</td>
+              <td>
+                분석, 서비스 안정성 확보,
+                보안 및 부정 사용 방지
+              </td>
+            </tr>
+
+            <tr>
+              <td>기기 또는 기타 ID</td>
+              <td>
+                광고 ID, App Set ID 및
+                서비스 운영에 필요한 기기 식별 정보
+              </td>
+              <td>
+                광고 제공, 분석,
+                부정 사용 방지 및 서비스 운영
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. 피트니스 정보 및 만보기 기능</h2>
+
+      <p>
+        슬기로운 택배생활은 사용자가 만보기 기능을 사용하는 경우
+        걸음수 등의 신체 활동 정보를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        해당 정보는 앱 내 걸음수 표시와 걸음수 랭킹 기능 제공을 위해 사용됩니다.
+      </p>
+
+      <p>
+        만보기 및 걸음수 랭킹 기능의 사용은 선택사항이며,
+        해당 기능을 사용하지 않아도 업무 기록, 정산 등 앱의 기본 기능을 이용할 수 있습니다.
+      </p>
+
+      <p>
+        슬기로운 택배생활은 이러한 피트니스 정보를
+        의료 진단, 치료 또는 의학적 판단을 목적으로 사용하지 않습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. 랭킹 기능</h2>
+
+      <p>
+        사용자가 랭킹 기능에 참여하면 사용자가 설정한 닉네임과
+        랭킹 산정을 위해 필요한 업무 또는 활동 데이터가 서버로 전송될 수 있습니다.
+      </p>
+
+      <p>
+        공개 랭킹에는 서비스 제공을 위해 필요한 정보만 표시됩니다.
+      </p>
+
+      <p>
+        사용자는 부적절한 랭킹 사용자 또는 닉네임을 신고할 수 있으며,
+        신고 내용은 서비스 운영자가 확인할 수 있습니다.
+      </p>
+
+      <p>
+        필요한 경우 운영자는 서비스 정책에 따라
+        닉네임 변경 요청, 일시적인 랭킹 제외 또는
+        영구적인 랭킹 제외 등의 조치를 적용할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. 개발자 문의 기능</h2>
+
+      <p>
+        사용자가 앱 내 개발자 문의 기능을 이용하는 경우
+        문의 확인과 문제 해결을 위해 다음 정보가 전송될 수 있습니다.
+      </p>
 
       <ul>
-        <li>월간 구독 기준 가격: 1,100원</li>
-        <li>연간 구독 기준 가격: 11,000원</li>
-        <li>구독 상품은 Google Play를 통해 결제됩니다.</li>
-        <li>실제 판매 가격은 Google Play 결제 화면의 표시 가격을 기준으로 합니다.</li>
-        <li>구독은 Google Play 계정의 구독 관리 화면에서 관리하거나 해지할 수 있습니다.</li>
+        <li>사용자가 작성한 문의 유형, 제목 및 내용</li>
+        <li>Firebase 익명 사용자 식별자</li>
+        <li>앱 버전</li>
+        <li>Android 버전</li>
+        <li>기기 모델</li>
       </ul>
+
+      <p style="margin-top: 14px;">
+        이러한 정보는 문의 내용 확인, 답변 제공,
+        오류 및 호환성 문제 분석을 위해 사용됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Firebase 서비스 이용</h2>
+
+      <p>
+        슬기로운 택배생활은 일부 온라인 기능 제공을 위해
+        Google Firebase 서비스를 이용할 수 있습니다.
+      </p>
+
+      <p>
+        Firebase를 통해 랭킹, 개발자 문의, 무료 체험 상태 확인,
+        데이터 동기화 또는 기타 서버 기반 기능에 필요한 정보가 처리될 수 있습니다.
+      </p>
+
+      <p>
+        앱은 사용자에게 일반적인 이메일·비밀번호 계정 가입을 요구하지 않으며,
+        일부 서버 기능에서 Firebase 익명 인증을 사용할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. 광고 및 Google Mobile Ads</h2>
+
+      <p>
+        무료 이용 상태에서는 Google Mobile Ads SDK를 이용한 광고가 표시될 수 있습니다.
+      </p>
+
+      <p>
+        Google Mobile Ads SDK는 광고 제공, 광고 성과 측정,
+        분석 및 부정 사용 방지 등의 목적으로
+        광고 ID, App Set ID, 앱 상호작용 정보,
+        진단 정보 및 기타 기술적 정보를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        일부 광고 관련 데이터는 Google 등 제3자 서비스 제공자에게
+        전송되거나 공유될 수 있으며,
+        해당 데이터의 처리는 각 서비스 제공자의 정책에 따라 이루어질 수 있습니다.
+      </p>
+
+      <div class="notice">
+        Google 개인정보처리방침<br />
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://policies.google.com/privacy
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>8. Google Play 결제</h2>
+
+      <p>
+        슬기로운 택배생활 PRO 구독 결제는 Google Play 결제 시스템을 통해 처리됩니다.
+      </p>
+
+      <p>
+        개발자는 사용자의 신용카드 번호 또는 은행 계좌번호와 같은
+        직접적인 결제수단 정보를 앱에서 수집하거나 저장하지 않습니다.
+      </p>
+
+      <p>
+        결제 및 구독과 관련된 정보는 Google Play의 정책과 처리 절차가 적용됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. 데이터 공유</h2>
+
+      <p>
+        개발자는 사용자의 개인정보를 임의로 판매하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 제공, 분석, 보안 및 서비스 운영을 위해
+        Google Mobile Ads, Firebase 등 서비스 제공자에게
+        필요한 데이터가 전송되거나 공유될 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>10. 데이터 보관 및 삭제</h2>
+
+      <p>
+        서버에 저장되는 정보는 해당 기능 제공 및 서비스 운영에 필요한 기간 동안
+        보관될 수 있습니다.
+      </p>
+
+      <p>
+        서비스 제공 목적이 달성되었거나 더 이상 필요하지 않은 데이터는
+        관련 법령, 서비스 보안 및 운영상 필요한 범위를 제외하고
+        삭제될 수 있습니다.
+      </p>
+
+      <p>
+        앱에서 직접 삭제 기능을 제공하는 데이터는
+        사용자가 해당 기능을 이용하여 삭제할 수 있습니다.
+      </p>
+
+      <p>
+        랭킹 참여 해제, 문의 삭제 등 특정 기능에서 제공되는 데이터 관리 기능은
+        앱의 해당 화면에서 이용할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>11. 데이터 전송 및 보호</h2>
+
+      <p>
+        앱에서 서버로 전송되는 데이터는
+        HTTPS 등 암호화된 통신 방식을 통해 전송됩니다.
+      </p>
+
+      <p>
+        개발자는 사용자 데이터에 대한 무단 접근, 변경, 유출 또는 손실을 방지하기 위해
+        합리적인 기술적·관리적 보호 조치를 적용하기 위해 노력합니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>12. 기기 내에서만 처리되는 데이터</h2>
+
+      <p>
+        앱의 일부 업무 기록, 설정 또는 기능 데이터는
+        기능의 종류와 사용자의 설정에 따라 기기 내부에서만 처리될 수 있습니다.
+      </p>
+
+      <p>
+        기기 내부에서만 처리되고 외부 서버로 전송되지 않는 정보는
+        서버 수집 데이터에 포함되지 않습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>13. 선택적 기능</h2>
+
+      <p>
+        랭킹, 만보기 등 일부 기능은 사용자가 직접 선택하여 이용할 수 있습니다.
+      </p>
+
+      <p>
+        선택적 기능을 이용하지 않더라도
+        업무 기록, 정산 등 슬기로운 택배생활의 기본 기능은 이용할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>14. 아동의 개인정보</h2>
+
+      <p>
+        슬기로운 택배생활은 아동을 주요 대상으로 설계된 서비스가 아니며,
+        의도적으로 아동의 개인정보를 수집하기 위한 기능을 제공하지 않습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>15. 개인정보처리방침의 변경</h2>
+
+      <p>
+        앱 기능, 데이터 처리 방식, 관련 법령 또는
+        Google Play 정책이 변경되는 경우
+        본 개인정보처리방침이 변경될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항이 있는 경우 앱 또는 본 페이지를 통해 안내할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>16. 개인정보 관련 문의</h2>
+
+      <p>
+        개인정보 처리, 데이터 이용 또는 본 개인정보처리방침과 관련된 문의는
+        아래 이메일 또는 앱 내 개발자 문의 기능을 이용해 주시기 바랍니다.
+      </p>
+
+      <div class="contact">
+        <strong>개발자 이메일</strong><br />
+        <a href="mailto:inscene1@naver.com">inscene1@naver.com</a>
+      </div>
     </section>
 
     <footer>
-      © 슬기로운 택배생활
+      © 슬기로운 택배생활 · 개인정보처리방침
     </footer>
 
   </main>
